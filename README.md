@@ -1,2 +1,3 @@
 # php-error-interceptor
-Method for error entercepting in PHP
+
+Технология перехвата и обработки ошибок в PHP
