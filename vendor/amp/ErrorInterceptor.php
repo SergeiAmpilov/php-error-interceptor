@@ -10,8 +10,10 @@ class ErrorInterceptor
         /* установим режим отображения ошибок в зависимости от среды исполнения приложения */
         if (DEBUG) {
             error_reporting(E_ALL);
+            ini_set('display_errors', true);
         } else {
             error_reporting(NIL);
+            ini_set('display_errors', false);
         }
 
         // подключаем функции-перехватчики событий
